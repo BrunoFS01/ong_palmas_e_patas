@@ -6,6 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos - Palmas e Patas</title>
+
+    <!-- Vinculo CSS - Banner ajustável -->
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
@@ -27,13 +31,138 @@
 <br>
     <main>
 
-    CONTEÚDO PROJETOS<br>
+    <!-- Galeria de Projetos: Cards ou seções detalhando as ações da ONG (com imagens e textos explicativos). -->
+    <section id="galeria-projetos">
+        <h2>Nossos Projetos</h2>
 
-    -	Galeria de Projetos: Cards ou seções detalhando as ações da ONG (com imagens e textos explicativos).<br>
-    -	Como Ajudar / Doações: Explicação de como doar (PIX fictício, dados bancários ou metas de arrecadação).<br>
-    -	Voluntariado: Seção explicando como funciona o trabalho voluntário e um botão/link com chamada para ação (Call to Action) direcionando para a página de cadastro.<br>
+        <!-- Card / Projeto 1 -->
+        <article class="card-projeto">
+            <picture>
+                <source srcset="imagem1.png" type="image/png">
+                <img src="imagem1.jpg" alt="Foto do Projeto Resgate e Reabilitação" class="img-projeto" width="400">
+            </picture>
+            <h3>Resgate e Reabilitação</h3>
+            <p>Atendimento médico emergencial, cirurgias e acolhimento para animais vítimas de maus-tratos ou abandonados nas ruas.</p>
+        </article>
 
+        <!-- Card / Projeto 2 -->
+        <article class="card-projeto">
+            <picture>
+                <source srcset="imagem2.png" type="image/png">
+                <img src="imagem2.jpg" alt="Foto do Mutirão de Castração" class="img-projeto" width="400">
+            </picture>
+            <h3>Mutirão de Castração</h3>
+            <p>Ações comunitárias focadas no controle populacional ético e na prevenção de doenças em bairros de alta vulnerabilidade.</p>
+        </article>
 
+        <!-- Card / Projeto 3 -->
+        <article class="card-projeto">
+            <picture>
+                <source srcset="imagem3.png" type="image/png">
+                <img src="imagem3.jpg" alt="Foto da Feira de Adoção" class="img-projeto" width="400">
+            </picture>
+            <h3>Feiras de Adoção</h3>
+            <p>Eventos periódicos organizados em pontos estratégicos da cidade para encontrar lares responsáveis para nossos animais reabilitados.</p>
+        </article>
+
+        <!-- Card / Projeto 4 -->
+        <article class="card-projeto">
+        <picture>
+            <source srcset="imagem4.png" type="image/png">
+            <img src="imagem4.jpg" alt="Foto do Projeto Educação nas Escolas" class="img-projeto" width="400">
+        </picture>
+        <h3>Educação e Conscientização</h3>
+        <p>Palestras e oficinas em escolas públicas para ensinar crianças e jovens sobre posse responsável, direitos dos animais e combate aos maus-tratos.</p>
+    </article>
+
+    <!-- Card / Projeto 5 -->
+    <article class="card-projeto">
+        <picture>
+            <source srcset="imagem5.png" type="image/png">
+            <img src="imagem5.jpg" alt="Foto do Projeto Apadrinhamento de Animais Idosos" class="img-projeto" width="400">
+        </picture>
+        <h3>Apadrinhamento de Idosos</h3>
+        <p>Programa dedicado a garantir alimentação especial, medicamentos e fisioterapia para animais sêniores que possuem menores chances de adoção rápida.</p>
+    </article>
+
+    <!-- Card / Projeto 6 -->
+    <article class="card-projeto">
+        <picture>
+            <source srcset="imagem6.png" type="image/png">
+            <img src="imagem6.jpg" alt="Foto do Projeto Comedouros Comunitários" class="img-projeto" width="400">
+        </picture>
+        <h3>Comedouros Comunitários</h3>
+        <p>Instalação e abastecimento contínuo de pontos de ração e água limpa em bairros periféricos para atender animais em situação de rua.</p>
+    </article>
+    </section>
+
+    <!-- Como Ajudar / Doações: Explicação de como doar (PIX fictício, dados bancários ou metas de arrecadação). -->
+     <section id="como-ajudar">
+        <h2>Como Ajudar / Doações</h2>
+        <p>A <strong>Palmas e Patas</strong> não possui fins lucrativos e depende integralmente da generosidade da comunidade para manter os resgates, exames e alimentação dos animais. Confira as formas de contribuir:</p>
+
+        <article id="pix">
+            <h3>Doação via PIX</h3>
+            <p>A forma mais rápida e direta de nos ajudar a cobrir despesas médicas urgentes.</p>
+            <ul>
+                <li><strong>Chave PIX (CNPJ fictício):</strong> 00.123.456/0001-78</li>
+                <li><strong>Chave PIX (E-mail fictício):</strong> doacoes@palmasepatas.org.br</li>
+                <li><strong>Favorecido:</strong> Associação Palmas e Patas de Proteção Animal</li>
+            </ul>
+        </article>
+
+        <article id="dados-bancarios">
+            <h3>Transferência Bancária</h3>
+            <ul>
+                <li><strong>Banco:</strong> 001 – Banco do Brasil</li>
+                <li><strong>Agência:</strong> 1234-5</li>
+                <li><strong>Conta Corrente:</strong> 98765-4</li>
+                <li><strong>CNPJ:</strong> 00.123.456/0000-78</li>
+            </ul>
+        </article>
+
+        <article id="meta-arrecadacao">
+            <h3>Meta do Mês: Campanha de Ração</h3>
+            <p>Nossa meta atual é arrecadar <strong>R$ 3.000,00</strong> para a compra de ração e medicamentos para os lares temporários.</p>
+            <p><strong>Progresso atual:</strong> R$ 1.850,00 arrecadados (61%)</p>
+        </article>
+
+        <article id="outras-formas">
+            <h3>Outras Formas de Apoio</h3>
+            <ul>
+                <li><strong>Doação física:</strong> Entregue ração, cobertores, guias ou medicamentos em nossos pontos de coleta parceiros.</li>
+                <li><strong>Apadrinhamento:</strong> Ajude com os custos mensais fixos de um animal idoso ou em tratamento contínuo.</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Voluntariado: Seção explicando como funciona o trabalho voluntário e um botão/link com chamada para ação (Call to Action) direcionando para a página de cadastro. -->
+    <section id="voluntariado">
+        <h2>Seja um Voluntário</h2>
+        
+        <article id="como-funciona-voluntariado">
+            <h3>Como Funciona o Trabalho Voluntário</h3>
+            <p>
+                O trabalho voluntário é o coração da <strong>Palmas e Patas</strong>. Não é preciso ter formação na área veterinária para ajudar; basta ter amor pelos animais, responsabilidade e disposição para dedicar algumas horas da sua semana ou mês à nossa causa.
+            </p>
+            
+            <h4>Áreas de Atuação:</h4>
+            <ul>
+                <li><strong>Lares Temporários:</strong> Acolha temporariamente um animal resgatado até que ele seja adotado (a ONG fornece a ração e os cuidados médicos).</li>
+                <li><strong>Feiras de Adoção:</strong> Auxilie no transporte, manejo e atendimento aos visitantes durante os eventos no final de semana.</li>
+                <li><strong>Resgate e Logística:</strong> Ajude no transporte de animais para consultas veterinárias ou clínicas parceiras.</li>
+                <li><strong>Divulgação e Mídias:</strong> Produza fotos, vídeos e artes para ajudar a divulgar os animais disponíveis para adoção.</li>
+            </ul>
+        </article>
+
+        <article id="chamada-voluntariado">
+            <h3>Faça a Diferença Hoje</h3>
+            <p>Preencha nosso formulário de inscrição e escolha a forma de apoio que melhor se adapta à sua rotina.</p>
+            
+            <!-- Call to Action (CTA) direcionando para cadastro.html -->
+            <a href="cadastro.html" class="btn-cta">Quero me Cadastrar como Voluntário</a>
+        </article>
+    </section>
 
     </main>
     <br>

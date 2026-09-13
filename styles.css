@@ -1,0 +1,6 @@
+/* Estilo global - Banner ajustável */
+.banner-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

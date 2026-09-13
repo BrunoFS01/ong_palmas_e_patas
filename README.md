@@ -28,5 +28,11 @@ Este repositório contém o código-fonte do website institucional da ONG fictí
 ---
 
 ## 📌 Status do Projeto
-🚧 **Em desenvolvimento (Estrutura Inicial)**  
-Atualmente, as estruturas base em HTML5 e os elementos de rodapé e navegação foram padronizados. Os próximos passos incluem a estilização completa via CSS e dynamic scripts.
+🚧 **Em desenvolvimento (Estrutura Inicial)**
+
+* **Estrutura Base:** Padronização das tags semânticas do HTML5, cabeçalho e sistema de navegação.
+* **Conteúdo:** Implementação da página principal (`index.html`) e da página de projetos (`projetos.html`).
+* **Próximos Passos:** 
+  * Estruturação do formulário de cadastro (`cadastro.html`).
+  * Estilização completa e layout responsivo com CSS3.
+  * Implementação de interatividade com JavaScript.
