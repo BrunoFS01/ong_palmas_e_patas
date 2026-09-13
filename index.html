@@ -6,11 +6,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início - Palmas e Patas</title>
+
+    <!-- CSS TEMPORÁRIO PARA TESTES -->
+    <style>
+        .banner-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+
 </head>
 <body>
 
     <header>
-        IMAGEM BANNER COM LOGO
+        <picture>
+            <!-- Formato principal (ex: PNG ou WebP) -->
+            <source srcset="banner.png" type="image/png">
+            <!-- Fallback/Reserva caso o navegador não carregue o source acima -->
+            <img src="banner.jpg" alt="Banner Institucional da ONG Palmas e Patas" class="banner-img">
+            
+        </picture>
         <br>
         <nav>
         <a href="index.html">Início</a>
@@ -28,7 +44,8 @@
 
 
     </main>
-<br>
+    <br>
+    <hr>
     <footer>
 
     <section>
