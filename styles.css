@@ -1,6 +1,24 @@
-/* Estilo global - Banner ajustável */
+/* Imagen de Banner */
 .banner-img {
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+/* Menu principal */
+.menu-principal {
+    background-color: #ff9933;
+    padding: 10px;
+}
+/* Menu principal - texto */
+.menu-principal a {
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+/* Cor de fundo do site*/
+body {
+    background-color: #f2f2f2;
 }
