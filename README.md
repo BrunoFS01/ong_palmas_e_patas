@@ -32,7 +32,7 @@ Este repositório contém o código-fonte do website institucional da ONG fictí
 
 * **Estrutura Base:** Padronização das tags semânticas do HTML5, cabeçalho e sistema de navegação.
 * **Conteúdo:** Implementação da página principal (`index.html`, `projetos.html` e `cadastro.html`).
-* **Estilização:** Estilização aplicadas principalmente no banner, menu e rodapé.
+* **Estilização:** Estilização aplicadas no banner, menu, página inicial e rodapé.
 * **Próximos Passos:** 
-  * Estilização do corpo das páginas e layout responsivo com CSS3.
+  * Estilização do corpo das páginas Projetos e Cadastro, layout responsivo com CSS3.
   * Implementação de interatividade com JavaScript.

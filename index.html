@@ -22,9 +22,9 @@
         <picture>
             <!-- Banner -->
             <!-- Formato principal -->
-            <source srcset="Imagens\banner.png" type="image/png">
+            <source srcset="Imagens/banner.png" type="image/png">
             <!-- Formato reserva -->
-            <img src="Imagens\banner.jpg" alt="Banner Institucional da ONG Palmas e Patas" class="banner-img">
+            <img src="Imagens/banner.jpg" alt="Banner Institucional da ONG Palmas e Patas" class="banner-img">
         </picture>
 
         <!-- Menu de navegação principal -->
@@ -48,38 +48,61 @@
     <main>
         <!-- Sobre a ONG: Missão, visão, valores e histórico da organização. -->
         <section id="sobre">
-            <h2>Sobre a Palmas e Patas</h2>
-            
-            <article id="historico">
-                <!-- História fictícia. -->
-                <h3>Nossa História</h3>
-                <p>
-                    Fundada em 2020, a <strong>Palmas e Patas</strong> nasceu da união de voluntários comprometidos em transformar a realidade dos animais abandonados e em situação de risco. O que começou com resgates pontuais evoluiu para uma estrutura organizada que já auxiliou na recuperação e adoção de centenas de cães e gatos, promovendo a conscientização sobre a posse responsável.
-                </p>
-            </article>
+            <h2 class="titulo-secao">Sobre a Palmas e Patas</h2>
+
+            <div class="sobre-conteudo">
+                <picture>
+                    <source srcset="Imagens/sobre.png" type="image/png">
+                    <img src="Imagens/sobre.jpg" alt="Foto do Projeto Comedouros Comunitários" class="img-sobre">
+                </picture>
+
+                <article id="historico">
+                    <!-- História fictícia. -->
+                    <h3>Nossa História</h3>
+                    <p>
+                        Fundada em 2020, a <strong>Palmas e Patas</strong> nasceu da união de voluntários comprometidos em transformar a realidade dos animais abandonados e em situação de risco. O que começou com resgates pontuais evoluiu para uma estrutura organizada que já auxiliou na recuperação e adoção de centenas de cães e gatos, promovendo a conscientização sobre a posse responsável.
+                    </p>
+                </article>
+            </div>
 
             <article id="missao-visao-valores">
                 <h3>Diretrizes Institucionais</h3>
                 
-                <h4>Missão</h4>
-                <p>Resgatar, reabilitar e encontrar lares responsáveis para animais em situação de vulnerabilidade, promovendo a defesa dos direitos animais e a conscientização da comunidade.</p>
+                <div class="diretrizes">
 
-                <h4>Visão</h4>
-                <p>Ser referência em acolhimento e bem-estar animal, consolidando uma rede de apoio comunitário que erradique o abandono e os maus-tratos.</p>
+                    <div class="diretriz">
+                        <h4>Missão</h4>
+                        <p>Resgatar, reabilitar e encontrar lares responsáveis para animais em situação de vulnerabilidade, promovendo a defesa dos direitos animais e a conscientização da comunidade.</p>
+                    </div>
 
-                <h4>Valores</h4>
-                <ul>
-                    <li><strong>Respeito à vida:</strong> Valorização e cuidado com a integridade física e emocional de cada animal.</li>
-                    <li><strong>Transparência:</strong> Ética e clareza na prestação de contas e no direcionamento dos recursos recebidos.</li>
-                    <li><strong>Comprometimento:</strong> Dedicação contínua à causa e ao bem-estar dos assistidos.</li>
-                    <li><strong>Trabalho em equipe:</strong> Cooperação ativa entre voluntários, parceiros e a comunidade.</li>
-                </ul>
+                    <div class="diretriz">
+                        <h4>Visão</h4>
+                        <p>Ser referência em acolhimento e bem-estar animal, consolidando uma rede de apoio comunitário que erradique o abandono e os maus-tratos.</p>
+                    </div>
+
+                    <div class="diretriz">
+                        <h4>Valores</h4>
+                        <ul>
+                            <li><strong>Respeito à vida:</strong> Cuidado com o bem-estar animal.</li>
+                            <li><strong>Transparência:</strong> Ética e clareza no uso dos recursos.</li>
+                            <li><strong>Comprometimento:</strong> Dedicação à causa animal.</li>
+                            <li><strong>Trabalho em equipe:</strong> Cooperação entre voluntários.</li>
+                        </ul>
+                    </div>
+                </div>
             </article>
         </section>
 
         <!-- Equipe e Transparência: Breve apresentação da estrutura organizacional ou conquistas. -->
         <section id="equipe-transparencia">
-            <h2>Equipe e Transparência</h2>
+            <h2 class="titulo-secao">Equipe e Transparência</h2>
+
+            <div class="equipe-conteudo">
+
+            <picture>
+                <source srcset="Imagens/equipe.png" type="image/png">
+                <img src="Imagens/equipe.jpg" alt="Foto do Projeto Comedouros Comunitários" class="img-equipe">
+            </picture>
 
             <article id="estrutura-organizacional">
                 <h3>Nossa Estrutura</h3>
@@ -93,18 +116,31 @@
                     <li><strong>Comunicação e Design:</strong> Gestão de redes sociais, divulgação de casos urgentes e transparência.</li>
                 </ul>
             </article>
+            </div>
 
             <article id="conquistas">
                 <h3>Nossas Conquistas</h3>
                 <p>
                     Graças ao apoio incondicional de doadores e parceiros, alcançamos marcos fundamentais para a causa animal em nossa região:
                 </p>
-                <ul>
-                    <li><strong>+450 animais resgatados:</strong> Cães e gatos retirados de situações de risco ou maus-tratos.</li>
-                    <li><strong>+380 adoções responsáveis:</strong> Animais reabilitados e encaminhados para lares definitivos.</li>
-                    <li><strong>100% de castração:</strong> Todos os animais adultos são entregues já castrados aos adotantes.</li>
-                    <li><strong>+2 toneladas de ração:</strong> Distribuídas anualmente entre nossos lares temporários e protetores independentes.</li>
-                </ul>
+                <div class="conquistas-caixas">
+                    <div class="conquista">
+                        <strong>+450 animais resgatados:</strong>
+                        Cães e gatos retirados de situações de risco ou maus-tratos.
+                    </div>
+                    <div class="conquista">
+                        <strong>+380 adoções responsáveis:</strong>
+                        Animais reabilitados e encaminhados para lares definitivos.
+                    </div>
+                    <div class="conquista">
+                        <strong>100% de castração:</strong>
+                        Todos os animais adultos são entregues já castrados aos adotantes.
+                    </div>
+                    <div class="conquista">
+                        <strong>+2 toneladas de ração:</strong>
+                        Distribuídas anualmente entre nossos lares temporários e protetores independentes.
+                    </div>
+                </div>
             </article>
         </section>
 
