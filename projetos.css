@@ -1,0 +1,114 @@
+/* Cards de projetos*/
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card-projeto {
+    flex: 0;
+    display: flex;
+    background-color: rgba(51, 204, 153, 0.4); /* Em RGB para controlar a opacidade */
+    color: #0c0c0c;
+    padding: 20px;
+    border-radius: 16px;
+    align-items: center;
+    gap: 20px;
+}
+.card-projeto h4 {
+    margin: 0 0 10px 0;
+}
+
+.img-projeto {
+    width: 200px; /* Tamanho imagem*/
+    height: auto;
+    display: block;
+}
+
+/* Contorno Formas de Doação*/
+.formas-doacao {
+    display: flex;
+    gap: 60px;
+}
+.doacao {
+    flex: 1;
+    border: 2.5px solid #33cc99;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+/* Formas de pagamento*/
+.formas-doacao {
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.pix,
+.transferencia {
+    flex: 1;
+}
+
+/* Outras formas de apoio*/
+#outras-formas ul {
+    display: flex;
+    gap: 30px;
+}
+#outras-formas li {
+    flex: 1;
+}
+#outras-formas ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+/* Destaque arrecadação*/
+.valor-arrecadado {
+    color: #009966;
+    font-size: 24px;
+    font-weight: bold;
+}
+.porcentagem {
+    color: #009966;
+    font-weight: bold;
+}
+
+/* Barra*/
+.barra-progresso {
+    width: 62%;
+    height: 12px;
+    background-color: #dddddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Caixa arrecadação*/
+#meta-arrecadacao {
+    width: 60%;
+    border: 2.5px solid #33cc99;
+    border-radius: 16px;
+    padding: 20px;
+    padding-top: 0;
+    margin-left: 20px;
+}
+
+.barra-preenchida {
+    width: 61%;
+    height: 100%;
+    background-color: #009966;
+}
+
+
+/* Botão cadastro*/
+.btn-cta {
+    display: inline-block;
+    background-color: #ff9933;
+    color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,7 @@
+# Ignora a pasta inteira "Arquivos" e tudo que estiver dentro dela
+Arquivos/
+
+# Garantia para ignorar extensões do Word e Illustrator em qualquer lugar
+*.ai
+*.docx
+*.doc
