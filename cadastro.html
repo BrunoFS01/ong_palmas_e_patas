@@ -52,24 +52,26 @@
         <h2 class="titulo-secao">Seja um Voluntário da Palmas e Patas</h2>
         <p>Ficamos muito felizes pelo seu interesse em apoiar a nossa causa! O processo de adesão é simples e transparente.</p>
 
-        <article id="passo-a-passo">
-            <h3>Como funciona após a inscrição?</h3>
-            <ol>
-                <li><strong>Preenchimento do Formulário:</strong> Insira seus dados pessoais e escolha a área em que prefere atuar.</li>
-                <li><strong>Análise do Perfil:</strong> Nossa equipe revisará suas informações de acordo com a demanda da área escolhida.</li>
-                <li><strong>Contato via E-mail/WhatsApp:</strong> Em até 48 horas úteis, enviaremos um e-mail com as orientações detalhadas, regras do voluntariado e o link do nosso grupo de comunicação.</li>
-                <li><strong>Integração:</strong> Você participará de uma breve conversa online para tirar dúvidas antes de iniciar suas atividades.</li>
-            </ol>
-        </article>
+        <div class="orientacoes-caixas">
+            <article id="passo-a-passo">
+                <h3>Como funciona após a inscrição?</h3>
+                <ol>
+                    <li><strong>Preenchimento do Formulário:</strong> Insira seus dados pessoais e escolha a área em que prefere atuar.</li>
+                    <li><strong>Análise do Perfil:</strong> Nossa equipe revisará suas informações de acordo com a demanda da área escolhida.</li>
+                    <li><strong>Contato via E-mail/WhatsApp:</strong> Em até 48 horas úteis, enviaremos um e-mail com as orientações detalhadas, regras do voluntariado e o link do nosso grupo de comunicação.</li>
+                    <li><strong>Integração:</strong> Você participará de uma breve conversa online para tirar dúvidas antes de iniciar suas atividades.</li>
+                </ol>
+            </article>
 
-        <article id="requisitos">
-            <h3>Requisitos Básicos</h3>
-            <ul>
-                <li>Ser maior de 18 anos (ou possuir autorização dos responsáveis).</li>
-                <li>Ter disponibilidade e comprometimento com as tarefas assumidas.</li>
-                <li>Respeitar as diretrizes e o estatuto de bem-estar animal da ONG.</li>
-            </ul>
-        </article>
+            <article id="requisitos">
+                <h3>Requisitos Básicos</h3>
+                <ul>
+                    <li>Ser maior de 18 anos (ou possuir autorização dos responsáveis).</li>
+                    <li>Ter disponibilidade e comprometimento com as tarefas assumidas.</li>
+                    <li>Respeitar as diretrizes e o estatuto de bem-estar animal da ONG.</li>
+                </ul>
+            </article>
+        </div>
     </section>
 
     <!-- Formulário de Inscrição -->
@@ -77,99 +79,131 @@
     <!-- Normalmente, a ação seria o envio do formulário para o Back End -> Banco de Dados. -->
     <!-- O Back End normalmente mandaria a ação de voltar á index.html depois de receber os dados. -->
     <form name="enviar1" action="index.html">
+
     <fieldset>
         <legend>CADASTRO</legend>
 
         <br>
-        <!-- Informações pessoais -->
-        <fieldset>
-        <legend>Informações Pessoais</legend>
+        <div class="dados-cadastro"> <!-- Classe envolvendo informações pessoais e endereço para coloca-los lado a lado -->
+            <!-- Informações pessoais -->
+            <fieldset>
+            <legend>Informações Pessoais</legend>
 
-        <label for="nome">Nome Completo:</label>
-        <input type="text" id="nome" name="nome" required>
+            <div class="campo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
 
-        <label for="nascimento">Data de Nascimento:</label>
-        <input type="date" id="nascimento" name="nascimento">
+            <div class="linha-campos"> <!-- Para agrupar na mesma linha -->
+                <div class="campo">
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento">
+                </div>
 
-        <label for="cpf">CPF:</label>
-        <input type="text" id="cpf" name="cpf" 
-                pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" 
-                placeholder="000.000.000-00">
+                <div class="campo">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" 
+                            pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" 
+                            placeholder="000.000.000-00">
+                </div>
+            </div>
 
-        <label for="telefone">Telefone / WhatsApp:</label>
-        <input type="tel" id="telefone" name="telefone" 
-            pattern="\([0-9]{2}\)\s?[0-9]{4,5}-[0-9]{4}" 
-            placeholder="(11) 99999-9999">
+            <div class="linha-campos"> <!-- Para agrupar na mesma linha -->
+                <div class="campo">
+                    <label for="telefone">Telefone / WhatsApp:</label>
+                    <input type="tel" id="telefone" name="telefone" 
+                        pattern="\([0-9]{2}\)\s?[0-9]{4,5}-[0-9]{4}" 
+                        placeholder="(11) 99999-9999">
+                </div>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
 
-        </fieldset>
+            </fieldset>
 
-        <br>
-        <!-- Endereço -->
-        <fieldset>
-        <legend>Endereço</legend>
+            <br>
+            <!-- Endereço -->
+            <fieldset>
+            <legend>Endereço</legend>
 
-        <label for="cep">CEP:</label>
-        <input type="text" id="cep" name="cep" 
-            pattern="[0-9]{5}-[0-9]{3}" 
-            placeholder="00000-000">
+            <div class="linha-campos"> <!-- Para agrupar na mesma linha -->
+                <div class="campo">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" 
+                        pattern="[0-9]{5}-[0-9]{3}" 
+                        placeholder="00000-000">
+                </div>
+            
 
-        <label for="logradouro">Logradouro:</label>
-        <input type="text" id="logradouro" name="logradouro" required>
+                <div class="campo">
+                    <label for="logradouro">Logradouro:</label>
+                    <input type="text" id="logradouro" name="logradouro" required>
+                </div>
+            </div>
 
-        <label for="bairro">Bairro:</label>
-        <input type="text" id="bairro" name="bairro" required>
+            <div class="linha-campos"> <!-- Para agrupar na mesma linha -->
+                <div class="campo">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro" required>
+                </div>
 
-        <label for="cidade">Cidade:</label>
-        <input type="text" id="cidade" name="cidade" required>
+                <div class="campo">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" required>
+                </div>
 
-        <datalist id="UF">
-            <option value="SP">
-            <option value="RJ">
-            <option value="OUTRO">
-        </datalist>
+                <div class="campo">
+                    <datalist id="UF">
+                        <option value="SP">
+                        <option value="RJ">
+                        <option value="OUTRO">
+                    </datalist>
 
-        <label for="uf">UF:</label>
-        <input list="UF" id="uf" name="uf">
+                    <label for="uf">UF:</label>
+                    <input list="UF" id="uf" name="uf">
+                </div>
+            </div>
 
-        </fieldset>
+            </fieldset>
+        </div>
 
         <br>
         <!-- Área de atuação -->
-        <fieldset>
+        <fieldset class="areas-atuacao">
             <legend>Áreas de Atuação (selecione uma ou mais):</legend>
             
-            <div>
+            <div class="area">
                 <input type="checkbox" id="lar-temporario" name="areas_atuacao[]" value="Lar temporário">
                 <label for="lar-temporario"><strong>Lar temporário:</strong> Acolha temporariamente um animal resgatado até que ele seja adotado (a ONG fornece a ração e os cuidados médicos).</label>
             </div>
 
-            <div>
+            <div class="area">
                 <input type="checkbox" id="feiras-adocao" name="areas_atuacao[]" value="Feiras de Adoção">
                 <label for="feiras-adocao"><strong>Feiras de Adoção:</strong> Auxilie no transporte, manejo e atendimento aos visitantes durante os eventos no final de semana.</label>
             </div>
 
-            <div>
+            <div class="area">
                 <input type="checkbox" id="resgate-logistica" name="areas_atuacao[]" value="Resgate e Logística">
                 <label for="resgate-logistica"><strong>Resgate e Logística:</strong> Ajude no transporte de animais para consultas veterinárias ou clínicas parceiras.</label>
             </div>
 
-            <div>
+            <div class="area">
                 <input type="checkbox" id="divulgacao-midias" name="areas_atuacao[]" value="Divulgação e Mídias">
                 <label for="divulgacao-midias"><strong>Divulgação e Mídias:</strong> Produza fotos, vídeos e artes para ajudar a divulgar os animais disponíveis para adoção.</label>
             </div>
         </fieldset>
 
         <br>
+        <!-- Botão de enviar. -->
+        <!-- Ação de ir para index.html fica junto à abertura do <form -->
+        <button type="submit">Enviar</button>
 
     </fieldset>
 
-    <br>
-    <!-- Botão de enviar. -->
-     <!-- Ação de ir para index.html fica junto à abertura do <form -->
-    <button type="submit">Enviar</button>
+
 
 
     </form>
