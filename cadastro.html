@@ -2,16 +2,12 @@
 <!-- BRUNO FERNANDES DA SILVA -->
 <!-- RGM 49735403 -->
 
-<!-- Esspecificações de configurações da página -->
+<!-- Especificações de configurações da página -->
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início - Palmas e Patas</title>
-
-    <!-- Vinculo CSS - Banner ajustável automaticamente -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="cadastro.css">
 
 </head>
 
@@ -25,21 +21,21 @@
             <!-- Formato principal -->
             <source srcset="Imagens/banner.png" type="image/png">
             <!-- Formato reserva -->
-            <img src="Imagens/banner.jpg" alt="Banner Institucional da ONG Palmas e Patas" class="banner-img">
+            <img src="Imagens/banner.jpg" alt="Banner Institucional da ONG Palmas e Patas" class="banner-img" width="1200">
         </picture>
 
         <!-- Menu de navegação principal -->
         <nav class="menu-principal">
         <a href="index.html">
-            <img src="imagens/home.svg" alt="">
+            <img src="Imagens/home.svg" alt="" width="40">
             Início
         </a>
         <a href="projetos.html">
-            <img src="imagens/projetos.svg" alt="">
+            <img src="Imagens/projetos.svg" alt="" width="40">
             Projetos
         </a>
         <a href="cadastro.html">
-            <img src="imagens/cadastro2.svg" alt="">
+            <img src="Imagens/cadastro2.svg" alt="" width="40">
             Cadastre-se
         </a>
         </nav>
@@ -49,7 +45,7 @@
     <main>
     <!-- Explicações sobre a inscrição -->
     <section id="orientacoes-cadastro">
-        <h2 class="titulo-secao">Seja um Voluntário da Palmas e Patas</h2>
+        <h1 class="titulo-secao">Seja um Voluntário da Palmas e Patas</h1>
         <p>Ficamos muito felizes pelo seu interesse em apoiar a nossa causa! O processo de adesão é simples e transparente.</p>
 
         <div class="orientacoes-caixas">
@@ -97,14 +93,14 @@
             <div class="linha-campos"> <!-- Para agrupar na mesma linha -->
                 <div class="campo">
                     <label for="nascimento">Data de Nascimento:</label>
-                    <input type="date" id="nascimento" name="nascimento">
+                    <input type="date" id="nascimento" name="nascimento" required>
                 </div>
 
                 <div class="campo">
                     <label for="cpf">CPF:</label>
                     <input type="text" id="cpf" name="cpf" 
                             pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" 
-                            placeholder="000.000.000-00">
+                            placeholder="000.000.000-00" required>
                 </div>
             </div>
 
@@ -113,7 +109,7 @@
                     <label for="telefone">Telefone / WhatsApp:</label>
                     <input type="tel" id="telefone" name="telefone" 
                         pattern="\([0-9]{2}\)\s?[0-9]{4,5}-[0-9]{4}" 
-                        placeholder="(11) 99999-9999">
+                        placeholder="(11) 99999-9999" required>
                 </div>
 
                 <div class="campo">
@@ -134,7 +130,7 @@
                     <label for="cep">CEP:</label>
                     <input type="text" id="cep" name="cep" 
                         pattern="[0-9]{5}-[0-9]{3}" 
-                        placeholder="00000-000">
+                        placeholder="00000-000" required>
                 </div>
             
 
@@ -163,7 +159,7 @@
                     </datalist>
 
                     <label for="uf">UF:</label>
-                    <input list="UF" id="uf" name="uf">
+                    <input list="UF" id="uf" name="uf" required>
                 </div>
             </div>
 

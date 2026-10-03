@@ -13,17 +13,14 @@ Este repositório contém o código-fonte do website institucional da ONG fictí
 
 ## 🛠️ Tecnologias Utilizadas
 * **HTML5** (Semântica e Acessibilidade)
-* **CSS3** (Estilização e Responsividade)
-* **JavaScript** (Interatividade e Validações)
+* **CSS3** e **JavaScript** deverão ser implementados nas próximas etapas do projeto.
 
 ---
 
-## 📁 Estrutura do Site
+## 📁 Estrutura Atual do Site
 * `index.html` — Página inicial com apresentação da ONG e missão.
 * `projetos.html` — Listagem de ações, campanhas e projetos de resgate.
 * `cadastro.html` — Formulário de cadastro para novos voluntários e doadores.
-* `styles.css` — Folha de estilos centralizada.
-* `scripts.js` — Funcionalidades e rotinas em JavaScript.
 
 ---
 
@@ -32,7 +29,6 @@ Este repositório contém o código-fonte do website institucional da ONG fictí
 
 * **Estrutura Base:** Padronização das tags semânticas do HTML5, cabeçalho e sistema de navegação.
 * **Conteúdo:** Implementação da página principal (`index.html`, `projetos.html` e `cadastro.html`).
-* **Estilização:** Estilização aplicadas no banner, menu, página inicial e rodapé.
 * **Próximos Passos:** 
-  * Estilização do corpo das páginas Projetos e Cadastro, layout responsivo com CSS3.
+  * Estilização de todas as páginas e layout responsivo com CSS3.
   * Implementação de interatividade com JavaScript.
